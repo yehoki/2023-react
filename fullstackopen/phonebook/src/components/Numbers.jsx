@@ -27,7 +27,7 @@ function Numbers(props) {
 
   return (
     <div>
-      <Header title="Numbers" />
+      <Header title="Countries" />
       {decision(filteredData)}
     </div>
   );
