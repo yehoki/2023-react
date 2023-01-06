@@ -12,7 +12,7 @@ const Tile = (props) => {
             Area: {props.data[0].area}
         </div>
         <div>
-            <h3>Languages:</h3>
+            <h3>Languages: </h3>
             <ul>
                 {languages}
             </ul>
