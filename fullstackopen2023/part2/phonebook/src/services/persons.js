@@ -17,7 +17,7 @@ const create = async (newObject) => {
 const deleteUser = async (id) => {
   const deleteUrl = `${baseUrl}/${id}`;
   console.log(deleteUrl);
-  const request =  axios.delete(deleteUrl);≈   
+  const request =  axios.delete(deleteUrl);
 
   return request;
 }
