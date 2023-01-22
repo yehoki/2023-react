@@ -1,6 +1,14 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3001/persons";
+const baseUrl = "http://localhost:3001/api/persons";
 
+
+const getAll = () => {
+  const request = axios.get(baseUrl);
+  return request.then(response => response.data)
+}
+
+
+/*
 const getAll = async () => {
   const request = axios.get(baseUrl);
   const response = await request;
@@ -28,12 +36,14 @@ const updateUser = async (name, number) => {
   const request = await axios.put(updateUrl, newUser)
   return request.data;
 };
+*/
+
 
 const exportedObject = {
   getAll,
-  create,
+  /*create,
   deleteUser,
-  updateUser,
+  updateUser,*/
 };
 
 export default exportedObject;
