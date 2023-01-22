@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import Filter from "./components/Filter";
-import PersonForm from "./components/PersonForm";
-import Persons from "./components/Persons";
-import personService from "./services/persons";
+import Filter from "./components/Filter.jsx";
+import PersonForm from "./components/PersonForm.jsx";
+import Persons from "./components/Persons.jsx";
+import personService from "./services/persons.js";
 import "./App.css";
 
-import express from 'express';
 const App = () => {
   const [persons, setPersons] = useState([]);
   const [newName, setNewName] = useState("");
